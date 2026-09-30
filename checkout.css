@@ -1,0 +1,415 @@
+/* =========================================
+   CHECKOUT PAGE
+========================================= */
+
+.checkout-page {
+    width: 100%;
+    padding: 70px 6%;
+    background: #ffffff;
+    min-height: 70vh;
+    box-sizing: border-box;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.checkout-heading {
+    margin-bottom: 45px;
+}
+
+.checkout-heading p {
+    margin: 0 0 10px;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #777777;
+}
+
+.checkout-heading h1 {
+    margin: 0;
+
+    font-size: 44px;
+
+    color: #111111;
+}
+
+
+/* =========================================
+   TWO COLUMNS
+========================================= */
+
+.checkout-layout {
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   BILLING
+========================================= */
+
+.billing-section h2,
+.order-section h2 {
+    margin: 0 0 30px;
+
+    font-size: 28px;
+
+    color: #111111;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+
+    color: #111111;
+}
+
+.form-group label span {
+    color: #777777;
+
+    font-size: 12px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #cccccc;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #111111;
+}
+
+.form-group textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+/* =========================================
+   ORDER BOX
+========================================= */
+
+.order-box {
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border: 1px solid #dddddd;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ORDER HEADER
+========================================= */
+
+.order-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #d5d5d5;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.checkout-product {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #e0e0e0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.checkout-product-name {
+    max-width: 70%;
+
+    color: #333333;
+}
+
+.checkout-product-name strong {
+    color: #111111;
+}
+
+.checkout-product-price {
+    white-space: nowrap;
+
+    color: #111111;
+}
+
+
+/* =========================================
+   CHECKOUT ROW
+========================================= */
+
+.checkout-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #d5d5d5;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SHIPPING
+========================================= */
+
+.checkout-shipping {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.checkout-shipping-title {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.checkout-shipping-option {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.checkout-shipping-option input {
+    margin-top: 4px;
+
+    accent-color: #111111;
+}
+
+.checkout-shipping-option span {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+.checkout-shipping-option strong {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.checkout-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 22px 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PAYMENT INFORMATION
+========================================= */
+
+.payment-information {
+    margin: 5px 0 25px;
+
+    padding: 18px;
+
+    background: #eeeeee;
+
+    border-left: 3px solid #111111;
+}
+
+.payment-information h3 {
+    margin: 0 0 8px;
+
+    font-size: 14px;
+}
+
+.payment-information p {
+    margin: 0 0 8px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #555555;
+}
+
+.payment-information p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   PLACE ORDER
+========================================= */
+
+.place-order-button {
+    width: 100%;
+
+    padding: 17px 20px;
+
+    border: none;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.place-order-button:hover {
+    background: #333333;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .checkout-page {
+        padding: 55px 5%;
+    }
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .order-section {
+        order: 2;
+    }
+
+    .billing-section {
+        order: 1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .checkout-page {
+        padding: 45px 4%;
+    }
+
+    .checkout-heading h1 {
+        font-size: 36px;
+    }
+
+    .billing-section h2,
+    .order-section h2 {
+        font-size: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .order-box {
+        padding: 20px;
+    }
+
+}

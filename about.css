@@ -1,0 +1,437 @@
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-page {
+    width: 100%;
+}
+
+
+/* ========================================
+   ABOUT HERO
+======================================== */
+
+.about-hero {
+    width: 100%;
+    padding: 110px 7% 100px;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.about-small-title {
+    margin: 0 0 18px;
+    color: #777;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    color: #111;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.about-hero-text {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.about-hero-secondary {
+    margin-top: 12px;
+}
+
+
+/* ========================================
+   ABOUT CONTENT / OUR STORY
+======================================== */
+
+.about-content {
+    width: 100%;
+    padding: 100px 7%;
+    background: #fff;
+}
+
+.about-content-inner {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content-inner h2,
+.about-offer-inner h2,
+.about-ordering-inner h2 {
+    margin: 0 0 30px;
+    color: #111;
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.about-content-inner p:not(.about-label) {
+    margin: 0 0 22px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   WHAT WE OFFER
+======================================== */
+
+.about-offer {
+    width: 100%;
+    padding: 100px 6%;
+    background: #f7f7f7;
+}
+
+.about-offer-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-offer-inner h2 {
+    margin: 0 0 15px;
+    color: #111;
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.about-offer-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   COLLECTION GRID
+======================================== */
+
+.about-offer-grid {
+    width: 100%;
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ========================================
+   COLLECTION CARD
+======================================== */
+
+.about-offer-card {
+    position: relative;
+
+    height: 400px;
+
+    display: block;
+
+    overflow: hidden;
+
+    background: #111;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   COLLECTION IMAGE
+======================================== */
+
+.about-offer-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.about-offer-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.about-offer-card:hover .about-offer-image img {
+    transform: scale(1.08);
+}
+
+
+/* ========================================
+   DARK IMAGE OVERLAY
+======================================== */
+
+.about-offer-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background: rgba(0, 0, 0, 0.48);
+
+    transition: background 0.3s ease;
+}
+
+.about-offer-card:hover .about-offer-overlay {
+    background: rgba(0, 0, 0, 0.60);
+}
+
+
+/* ========================================
+   COLLECTION CONTENT
+======================================== */
+
+.about-offer-content {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.about-offer-content h3 {
+    margin: 0 0 18px;
+
+    color: #fff;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+.about-offer-content p {
+    max-width: 310px;
+
+    margin: 0 0 25px;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   SHOP NOW BUTTON
+======================================== */
+
+.about-offer-button {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    border: 1px solid #fff;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.about-offer-card:hover .about-offer-button {
+    background: #fff;
+
+    color: #111;
+}
+
+
+/* ========================================
+   ORDERING SECTION
+======================================== */
+
+.about-ordering {
+    width: 100%;
+
+    padding: 100px 7%;
+
+    background: #fff;
+}
+
+.about-ordering-inner {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about-ordering-inner h2 {
+    margin: 0 0 30px;
+
+    color: #111;
+
+    font-size: 34px;
+
+    line-height: 1.3;
+}
+
+.about-ordering-inner p:not(.about-label) {
+    margin: 0 0 22px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   EXPLORE SHOP BUTTON
+======================================== */
+
+.about-button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 14px 30px;
+
+    background: #111;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition: background 0.3s ease;
+}
+
+.about-button:hover {
+    background: #333;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .about-offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   RESPONSIVE - MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 75px 6%;
+    }
+
+    .about-hero h1 {
+        font-size: 35px;
+    }
+
+    .about-hero-text {
+        font-size: 14px;
+    }
+
+    .about-content,
+    .about-offer,
+    .about-ordering {
+        padding: 70px 6%;
+    }
+
+    .about-content-inner h2,
+    .about-offer-inner h2,
+    .about-ordering-inner h2 {
+        font-size: 27px;
+    }
+
+    .about-offer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .about-offer-card {
+        height: 380px;
+    }
+
+    .about-offer-content h3 {
+        font-size: 21px;
+    }
+
+    .about-offer-content p {
+        font-size: 13px;
+    }
+
+}

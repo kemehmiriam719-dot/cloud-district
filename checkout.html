@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Checkout | Cloud District</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+
+            <img
+                src="images/logo/cloud-district-logo.jpeg"
+                alt="Cloud District"
+            >
+
+        </a>
+
+    </div>
+
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+
+        <div class="nav-dropdown">
+
+            <a href="#">Vape Types</a>
+
+            <div class="dropdown-menu">
+
+                <a href="shop.html?type=Disposable%20Vapes">
+                    Disposable Vapes
+                </a>
+
+                <a href="shop.html?type=Vape%20Kits">
+                    Vape Kits
+                </a>
+
+                <a href="shop.html?type=Pods">
+                    Pods
+                </a>
+
+                <a href="shop.html?type=E-Liquids">
+                    E-Liquids
+                </a>
+
+                <a href="shop.html?type=Vaporizers">
+                    Vaporizers
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-dropdown">
+
+            <a href="#">Brands</a>
+
+            <div class="dropdown-menu">
+
+                <a href="shop.html?brand=Alibarbar">
+                    Alibarbar
+                </a>
+
+                <a href="shop.html?brand=Lost%20Mary">
+                    Lost Mary
+                </a>
+
+                <a href="shop.html?brand=HQD">
+                    HQD
+                </a>
+
+                <a href="shop.html?brand=IGET">
+                    IGET
+                </a>
+
+                <a href="shop.html?brand=Elf%20Bar">
+                    Elf Bar
+                </a>
+
+                <a href="shop.html?brand=Geek%20Bar">
+                    Geek Bar
+                </a>
+
+                <a href="shop.html?brand=Vaporesso">
+                    Vaporesso
+                </a>
+
+                <a href="shop.html?brand=OXVA">
+                    OXVA
+                </a>
+
+                <a href="shop.html?brand=RELX">
+                    RELX
+                </a>
+
+                <a href="shop.html?brand=Dry%20Herbs">
+                    Dry Herbs
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <div class="cart">
+
+        <a href="cart.html">
+
+            🛒
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     CHECKOUT
+========================================= -->
+
+<main class="checkout-page">
+
+    <div class="checkout-container">
+
+
+        <!-- PAGE HEADING -->
+
+        <div class="checkout-heading">
+
+            <p>COMPLETE YOUR ORDER</p>
+
+            <h1>Checkout</h1>
+
+        </div>
+
+
+
+        <div class="checkout-layout">
+
+
+            <!-- =================================
+                 LEFT SIDE
+            ================================== -->
+
+            <section class="billing-section">
+
+                <h2>
+                    Billing details
+                </h2>
+
+
+                <form id="checkout-form">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="first-name">
+                                First Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="firstName"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="last-name">
+                                Last Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="lastName"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- COUNTRY -->
+
+                    <div class="form-group">
+
+                        <label for="country">
+                            Country / Region *
+                        </label>
+
+                        <select
+                            id="country"
+                            name="country"
+                            required
+                        >
+
+                            <option value="Australia">
+                                Australia
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- STREET -->
+
+                    <div class="form-group">
+
+                        <label for="street">
+                            Street Address *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            placeholder="House number and street name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- APARTMENT -->
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="apartment"
+                            name="apartment"
+                            placeholder="Apartment, suite, unit, etc. (optional)"
+                        >
+
+                    </div>
+
+
+
+                    <!-- CITY -->
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            Suburb / City *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- STATE -->
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State *
+                        </label>
+
+                        <select
+                            id="state"
+                            name="state"
+                            required
+                        >
+
+                            <option value="">
+                                Select a state
+                            </option>
+
+                            <option value="New South Wales">
+                                New South Wales
+                            </option>
+
+                            <option value="Victoria">
+                                Victoria
+                            </option>
+
+                            <option value="Queensland">
+                                Queensland
+                            </option>
+
+                            <option value="Western Australia">
+                                Western Australia
+                            </option>
+
+                            <option value="South Australia">
+                                South Australia
+                            </option>
+
+                            <option value="Tasmania">
+                                Tasmania
+                            </option>
+
+                            <option value="Northern Territory">
+                                Northern Territory
+                            </option>
+
+                            <option value="Australian Capital Territory">
+                                Australian Capital Territory
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- POSTCODE -->
+
+                    <div class="form-group">
+
+                        <label for="postcode">
+                            Postcode *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="postcode"
+                            name="postcode"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ORDER NOTES -->
+
+                    <div class="form-group">
+
+                        <label for="order-notes">
+                            Order Notes
+                            <span>(Optional)</span>
+                        </label>
+
+                        <textarea
+                            id="order-notes"
+                            name="orderNotes"
+                            placeholder="Notes about your order, e.g. special notes for delivery."
+                        ></textarea>
+
+                    </div>
+
+
+                </form>
+
+            </section>
+
+
+
+            <!-- =================================
+                 RIGHT SIDE
+            ================================== -->
+
+            <aside class="order-section">
+
+                <h2>
+                    Your order
+                </h2>
+
+
+                <div class="order-box">
+
+
+                    <!-- HEADER -->
+
+                    <div class="order-header">
+
+                        <strong>
+                            Product
+                        </strong>
+
+                        <strong>
+                            Subtotal
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PRODUCTS -->
+
+                    <div id="checkout-products">
+
+                        <!-- Added by checkout.js -->
+
+                    </div>
+
+
+                    <!-- SUBTOTAL -->
+
+                    <div class="checkout-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="checkout-subtotal">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- SHIPPING -->
+
+                    <div class="checkout-shipping">
+
+                        <div class="checkout-shipping-title">
+
+                            Shipment
+
+                        </div>
+
+
+                        <label class="checkout-shipping-option">
+
+                            <input
+                                type="radio"
+                                name="checkout-shipping"
+                                value="20"
+                                checked
+                            >
+
+                            <span>
+
+                                Expedited Shipping
+                                (2 DAYS)
+
+                                <strong>
+                                    $20.00
+                                </strong>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkout-shipping-option">
+
+                            <input
+                                type="radio"
+                                name="checkout-shipping"
+                                value="50"
+                            >
+
+                            <span>
+
+                                Top Priority
+                                (Same day delivery)
+
+                                <strong>
+                                    $50.00
+                                </strong>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- TOTAL -->
+
+                    <div class="checkout-total">
+
+                        <strong>
+                            Total
+                        </strong>
+
+                        <strong id="checkout-total">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PAYMENT MESSAGE -->
+
+                    <div class="payment-information">
+
+                        <h3>
+                            Payment
+                        </h3>
+
+                        <p>
+                            Payment will be arranged
+                            directly with Cloud District
+                            after your order is submitted.
+                        </p>
+
+                        <p>
+                            After placing your order,
+                            we will contact you to confirm
+                            your order and payment details.
+                        </p>
+
+                    </div>
+
+
+                    <!-- PLACE ORDER -->
+
+                    <button
+                        type="submit"
+                        form="checkout-form"
+                        class="place-order-button"
+                    >
+                        PLACE ORDER
+                    </button>
+
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>
