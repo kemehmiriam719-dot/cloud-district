@@ -440,10 +440,7 @@ document
            OPEN LINKTREE
         ================================= */
 
-        window.open(
-            LINKTREE_URL,
-            "_blank"
-        );
+    window.location.href = "https://linktr.ee/Vapedeliveryexpress001";
 
     });
 

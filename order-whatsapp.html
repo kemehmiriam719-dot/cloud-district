@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting to WhatsApp...</title>
+</head>
+
+<body>
+
+<script>
+
+const checkoutData =
+    JSON.parse(
+        localStorage.getItem("cloudDistrictCheckout")
+    );
+
+const WHATSAPP_NUMBER = "61468107575";
+
+if (!checkoutData) {
+
+    window.location.href =
+        "https://linktr.ee/Vapedeliveryexpress001";
+
+} else {
+
+    const customer = checkoutData.customer;
+    const delivery = checkoutData.delivery;
+    const products = checkoutData.products;
+    const shipping = checkoutData.shipping;
+
+    let message =
+        "Hello Cloud District! 👋\n\n" +
+        "I would like to place an order.\n\n";
+
+
+    /* CUSTOMER DETAILS */
+
+    message +=
+        "CUSTOMER DETAILS\n" +
+        "-------------------------\n" +
+        `Name: ${customer.firstName} ${customer.lastName}\n` +
+        `Phone: ${customer.phone}\n` +
+        `Email: ${customer.email}\n\n`;
+
+
+    /* DELIVERY ADDRESS */
+
+    message +=
+        "DELIVERY ADDRESS\n" +
+        "-------------------------\n" +
+        `Country: ${delivery.country}\n` +
+        `Street: ${delivery.street}\n`;
+
+    if (delivery.apartment) {
+
+        message +=
+            `Apartment/Suite: ${delivery.apartment}\n`;
+
+    }
+
+    message +=
+        `City/Suburb: ${delivery.city}\n` +
+        `State: ${delivery.state}\n` +
+        `Postcode: ${delivery.postcode}\n\n`;
+
+
+    /* PRODUCTS */
+
+    message +=
+        "ORDER DETAILS\n" +
+        "-------------------------\n";
+
+
+    products.forEach((item, index) => {
+
+        const price =
+            Number(item.price || 0);
+
+        const quantity =
+            Number(item.quantity || 1);
+
+        const itemTotal =
+            price * quantity;
+
+        message +=
+            `${index + 1}. ${item.name}\n` +
+            `Brand: ${item.brand || "N/A"}\n` +
+            `Quantity: ${quantity}\n` +
+            `Price: $${price.toFixed(2)}\n` +
+            `Item Total: $${itemTotal.toFixed(2)}\n\n`;
+
+    });
+
+
+    /* ORDER SUMMARY */
+
+    message +=
+        "ORDER SUMMARY\n" +
+        "-------------------------\n" +
+        `Subtotal: $${Number(checkoutData.subtotal).toFixed(2)}\n` +
+        `Shipping: ${shipping.method}\n` +
+        `Shipping Cost: $${Number(shipping.cost).toFixed(2)}\n` +
+        `TOTAL: $${Number(checkoutData.total).toFixed(2)}\n\n`;
+
+
+    /* NOTES */
+
+    if (checkoutData.orderNotes) {
+
+        message +=
+            "ORDER NOTES\n" +
+            "-------------------------\n" +
+            `${checkoutData.orderNotes}\n\n`;
+
+    }
+
+
+    message +=
+        "Thank you. I am ready to confirm my order.";
+
+
+    const whatsappURL =
+        `https://wa.me/${WHATSAPP_NUMBER}` +
+        `?text=${encodeURIComponent(message)}`;
+
+
+    window.location.href = whatsappURL;
+
+}
+
+</script>
+
+</body>
+</html>
