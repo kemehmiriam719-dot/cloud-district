@@ -3203,3 +3203,34 @@ a {
     }
 
 }
+
+/* =========================================
+   REVIEWS SHOW MORE
+========================================= */
+
+.reviews-collapsed .review-card:nth-child(n+4) {
+    display: none;
+}
+
+.reviews-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.reviews-toggle-button {
+    padding: 14px 30px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #111111;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reviews-toggle-button:hover {
+    background: #ffffff;
+    color: #111111;
+}

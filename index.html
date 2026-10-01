@@ -354,7 +354,7 @@
                 rel="noopener noreferrer"
             >Australian Government information on drug laws page
         </a>
-        
+
         </p>
 
 
@@ -1067,7 +1067,7 @@
     </div>
 
 
-    <div class="reviews-grid">
+    <div class="reviews-grid reviews-collapsed">
 
 
         <!-- REVIEW 1 -->
@@ -1719,8 +1719,20 @@
             <h3>Verified Customer</h3>
         </div>
 
+    </div>
+
+    <div class="reviews-button-wrapper">
+
+        <button
+            type="button"
+            id="reviews-toggle"
+            class="reviews-toggle-button"
+        >
+            VIEW MORE REVIEWS
+        </button>
 
     </div>
+
 
 </section>
 
@@ -2057,6 +2069,29 @@
     <script src="js/products.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/home.js"></script>
+
+    <script>
+
+    const reviewsGrid = document.querySelector(".reviews-grid");
+    const reviewsToggle = document.getElementById("reviews-toggle");
+
+    reviewsToggle.addEventListener("click", function () {
+
+        reviewsGrid.classList.toggle("reviews-collapsed");
+
+        if (reviewsGrid.classList.contains("reviews-collapsed")) {
+
+            reviewsToggle.textContent = "VIEW MORE REVIEWS";
+
+        } else {
+
+            reviewsToggle.textContent = "SHOW LESS";
+
+        }
+
+    });
+
+</script>
 
 <!-- ========================================
      FOOTER
