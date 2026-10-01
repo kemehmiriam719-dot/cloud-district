@@ -3066,3 +3066,140 @@ a {
 .footer-contact a:hover {
     color: #ffffff;
 }
+
+/* ========================================
+   DELIVERY & SHIPPING
+======================================== */
+
+.delivery-section {
+    padding: 90px 20px;
+    background: #f8f8f8;
+}
+
+.delivery-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delivery-label {
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #555;
+}
+
+.delivery-title {
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.delivery-intro {
+    max-width: 900px;
+    margin: 0 auto 18px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #444;
+}
+
+.delivery-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 55px 0;
+}
+
+.delivery-option {
+    padding: 35px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+.delivery-option h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #111;
+}
+
+.delivery-option p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.delivery-process {
+    margin-top: 60px;
+}
+
+.delivery-process > h3 {
+    margin-bottom: 35px;
+    font-size: 24px;
+    color: #111;
+}
+
+.delivery-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.delivery-step {
+    text-align: center;
+}
+
+.delivery-step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 18px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+}
+
+.delivery-step h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #111;
+}
+
+.delivery-step p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .delivery-section {
+        padding: 65px 20px;
+    }
+
+    .delivery-title {
+        font-size: 28px;
+    }
+
+    .delivery-options {
+        grid-template-columns: 1fr;
+    }
+
+    .delivery-steps {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
