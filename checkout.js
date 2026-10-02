@@ -439,11 +439,7 @@ document
         /* =================================
            OPEN LINKTREE
         ================================= */
-
-        window.open(
-            LINKTREE_URL,
-            "_blank"
-        );
+        window.location.href = LINKTREE_URL;
 
     });
 
